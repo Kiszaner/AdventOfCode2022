@@ -11,6 +11,7 @@
 		40CC5FDC2939EA6B00A1EEE4 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC5FD82939EA6B00A1EEE4 /* Day1.swift */; };
 		40CC5FDD2939EA6B00A1EEE4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC5FD92939EA6B00A1EEE4 /* Helpers.swift */; };
 		40CC629E2939EB0C00A1EEE4 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 40CC629D2939EB0C00A1EEE4 /* Algorithms */; };
+		A5D0D016293B54B500C8B392 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0D015293B54B500C8B392 /* Day2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		40CC5FD82939EA6B00A1EEE4 /* Day1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
 		40CC5FD92939EA6B00A1EEE4 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		40CC5FDB2939EA6B00A1EEE4 /* Day1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day1; sourceTree = "<group>"; };
+		A5D0D014293B543F00C8B392 /* Day2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day2; sourceTree = "<group>"; };
+		A5D0D015293B54B500C8B392 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				40CC5FD82939EA6B00A1EEE4 /* Day1.swift */,
+				A5D0D015293B54B500C8B392 /* Day2.swift */,
 				40CC5FD92939EA6B00A1EEE4 /* Helpers.swift */,
 				40CC5D112939E92600A1EEE4 /* main.swift */,
 				40CC5FDA2939EA6B00A1EEE4 /* Support Files */,
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				40CC5FDB2939EA6B00A1EEE4 /* Day1 */,
+				A5D0D014293B543F00C8B392 /* Day2 */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40CC5FDC2939EA6B00A1EEE4 /* Day1.swift in Sources */,
+				A5D0D016293B54B500C8B392 /* Day2.swift in Sources */,
 				40CC5FDD2939EA6B00A1EEE4 /* Helpers.swift in Sources */,
 				40CC5D122939E92600A1EEE4 /* main.swift in Sources */,
 			);
