@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40BAD853294076FD00264391 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BAD852294076FD00264391 /* Day7.swift */; };
 		40CC5D122939E92600A1EEE4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC5D112939E92600A1EEE4 /* main.swift */; };
 		40CC5FDC2939EA6B00A1EEE4 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC5FD82939EA6B00A1EEE4 /* Day1.swift */; };
 		40CC5FDD2939EA6B00A1EEE4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC5FD92939EA6B00A1EEE4 /* Helpers.swift */; };
@@ -30,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		40BAD851294076ED00264391 /* Day7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day7; sourceTree = "<group>"; };
+		40BAD852294076FD00264391 /* Day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
 		40CC5D0E2939E92600A1EEE4 /* AdventOfCode2022 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode2022; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CC5D112939E92600A1EEE4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		40CC5FD82939EA6B00A1EEE4 /* Day1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 				A5D0D018293B6DF100C8B392 /* Day3.swift */,
 				A5D0D01B293C8C3400C8B392 /* Day4.swift */,
 				A5D0D01E293F233A00C8B392 /* Day6.swift */,
+				40BAD852294076FD00264391 /* Day7.swift */,
 				40CC5FD92939EA6B00A1EEE4 /* Helpers.swift */,
 				40CC5D112939E92600A1EEE4 /* main.swift */,
 				40CC5FDA2939EA6B00A1EEE4 /* Support Files */,
@@ -96,6 +100,7 @@
 				A5D0D017293B6DEA00C8B392 /* Day3 */,
 				A5D0D01A293C8C1900C8B392 /* Day4 */,
 				A5D0D01D293F233100C8B392 /* Day6 */,
+				40BAD851294076ED00264391 /* Day7 */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			files = (
 				40CC5FDC2939EA6B00A1EEE4 /* Day1.swift in Sources */,
 				A5D0D01C293C8C3400C8B392 /* Day4.swift in Sources */,
+				40BAD853294076FD00264391 /* Day7.swift in Sources */,
 				A5D0D019293B6DF100C8B392 /* Day3.swift in Sources */,
 				A5D0D016293B54B500C8B392 /* Day2.swift in Sources */,
 				40CC5FDD2939EA6B00A1EEE4 /* Helpers.swift in Sources */,
