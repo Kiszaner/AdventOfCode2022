@@ -45,3 +45,7 @@ print("Day 6: \(result6)")
 let day7 = Day7(fileUrl: getInputsFileUrl(name: "Day7"))
 let result7: (Int, Int) = day7.resolve(input: getStringsFrom(day7.fileUrl))
 print("Day 7: \(result7)")
+
+let day8 = Day8(fileUrl: getInputsFileUrl(name: "Day8"))
+let result8: (Int, Int) = day8.resolve(input: getStringsFrom(day8.fileUrl))
+print("Day 8: \(result8)")

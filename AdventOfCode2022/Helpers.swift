@@ -44,3 +44,52 @@ class Day {
         fatalError("Method must be implemented by child class")
     }
 }
+
+public struct Point2D: Hashable, Equatable, AdditiveArithmetic {
+    public enum Direction: CaseIterable {
+        case north, east, south, west
+    }
+    
+    public static var zero: Point2D {
+        Point2D(x: 0, y: 0)
+    }
+    
+    public var x: Int = 0
+    public var y: Int = 0
+    
+    public init(x: Int, y: Int) {
+        self.x = x
+        self.y = y
+    }
+    
+    public func moved(_ direction: Direction) -> Point2D {
+        switch direction {
+        case .north:
+            return self + Point2D(x: 0, y: -1)
+        case .east:
+            return self + Point2D(x: 1, y: 0)
+        case .south:
+            return self + Point2D(x: 0, y: 1)
+        case .west:
+            return self + Point2D(x: -1, y: 0)
+        }
+    }
+    
+    public static func + (lhs: Point2D, rhs: Point2D) -> Point2D {
+        .init(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
+    }
+    
+    public static func - (lhs: Point2D, rhs: Point2D) -> Point2D {
+        .init(x: lhs.x - rhs.x, y: lhs.y - rhs.y)
+    }
+    
+    public static func += (lhs: inout Point2D, rhs: Point2D) {
+        lhs.x += rhs.x
+        lhs.y += rhs.y
+    }
+    
+    public static func -= (lhs: inout Point2D, rhs: Point2D) {
+        lhs.x -= rhs.x
+        lhs.y -= rhs.y
+    }
+}
