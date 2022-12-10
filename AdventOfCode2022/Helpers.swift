@@ -54,10 +54,10 @@ public struct Point2D: Hashable, Equatable, AdditiveArithmetic {
         Point2D(x: 0, y: 0)
     }
     
-    public var x: Int = 0
-    public var y: Int = 0
+    public var x: Int
+    public var y: Int
     
-    public init(x: Int, y: Int) {
+    public init(x: Int = 0, y: Int = 0) {
         self.x = x
         self.y = y
     }
