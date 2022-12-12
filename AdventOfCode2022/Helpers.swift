@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - Parsing
+
 func getInputsFileUrl(name: String) -> URL {
     let directory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath + "/Support Files")
     let fileUrl = URL(filePath: name, relativeTo: directory)
@@ -22,6 +24,8 @@ func getStringsFrom<T: Decodable>(_ url: URL) -> [T] {
     let data = try! Data(contentsOf: url)
     return try! JSONDecoder().decode([T].self, from: data)
 }
+
+// MARK: - Common classes
 
 class Day {
     let fileUrl: URL
@@ -44,6 +48,8 @@ class Day {
         fatalError("Method must be implemented by child class")
     }
 }
+
+// MARK: - Maps & Geometry
 
 public struct Point2D: Hashable, Equatable, AdditiveArithmetic {
     public enum Direction: CaseIterable {
@@ -92,4 +98,37 @@ public struct Point2D: Hashable, Equatable, AdditiveArithmetic {
         lhs.x -= rhs.x
         lhs.y -= rhs.y
     }
+}
+
+// MARK: - Maths
+
+public func greatestCommonFactor(_ x: Int, _ y: Int) -> Int {
+    var a = 0
+    var b = max(x, y)
+    var r = min(x, y)
+    while r != 0 {
+        a = b
+        b = r
+        r = a % b
+    }
+    
+    return b
+}
+
+public func leastCommonMultiplier(for a: Int, and b: Int) -> Int {
+    return a / greatestCommonFactor(a, b) * b
+}
+
+public func leastCommonMultiplier(for values: [Int]) -> Int {
+    let uniqueValues = Array(Set(values))
+    guard uniqueValues.count >= 2 else {
+        return uniqueValues.first ?? 0
+    }
+
+    var currentLCM = leastCommonMultiplier(for: uniqueValues[0], and: uniqueValues[1])
+    for value in uniqueValues[2 ..< uniqueValues.count] {
+        currentLCM = leastCommonMultiplier(for: currentLCM, and: value)
+    }
+
+    return currentLCM
 }

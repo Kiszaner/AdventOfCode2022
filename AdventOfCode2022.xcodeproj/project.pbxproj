@@ -19,6 +19,7 @@
 		A5D0D0222941C3FE00C8B392 /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0D0212941C3FE00C8B392 /* Day8.swift */; };
 		A5D0D0252944CDC200C8B392 /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0D0242944CDC200C8B392 /* Day9.swift */; };
 		A5D0D0282944DCBF00C8B392 /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0D0272944DCBF00C8B392 /* Day10.swift */; };
+		A5D0D02B29462D0200C8B392 /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D0D02A29462D0200C8B392 /* Day11.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,8 @@
 		A5D0D0242944CDC200C8B392 /* Day9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
 		A5D0D0262944DCB300C8B392 /* Day10 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day10; sourceTree = "<group>"; };
 		A5D0D0272944DCBF00C8B392 /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
+		A5D0D02929462CF900C8B392 /* Day11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11; sourceTree = "<group>"; };
+		A5D0D02A29462D0200C8B392 /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 				A5D0D0212941C3FE00C8B392 /* Day8.swift */,
 				A5D0D0242944CDC200C8B392 /* Day9.swift */,
 				A5D0D0272944DCBF00C8B392 /* Day10.swift */,
+				A5D0D02A29462D0200C8B392 /* Day11.swift */,
 				40CC5FD92939EA6B00A1EEE4 /* Helpers.swift */,
 				40CC5D112939E92600A1EEE4 /* main.swift */,
 				40CC5FDA2939EA6B00A1EEE4 /* Support Files */,
@@ -116,6 +120,7 @@
 				A5D0D0202941C3D700C8B392 /* Day8 */,
 				A5D0D0232944CDBA00C8B392 /* Day9 */,
 				A5D0D0262944DCB300C8B392 /* Day10 */,
+				A5D0D02929462CF900C8B392 /* Day11 */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			files = (
 				40CC5FDC2939EA6B00A1EEE4 /* Day1.swift in Sources */,
 				A5D0D01C293C8C3400C8B392 /* Day4.swift in Sources */,
+				A5D0D02B29462D0200C8B392 /* Day11.swift in Sources */,
 				40BAD853294076FD00264391 /* Day7.swift in Sources */,
 				A5D0D019293B6DF100C8B392 /* Day3.swift in Sources */,
 				A5D0D016293B54B500C8B392 /* Day2.swift in Sources */,
