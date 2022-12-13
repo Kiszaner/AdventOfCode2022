@@ -5,6 +5,7 @@
 //  Created by Kiszaner.
 //
 
+import Collections
 import Foundation
 
 // MARK: - Parsing
@@ -81,6 +82,15 @@ public struct Point2D: Hashable, Equatable, AdditiveArithmetic {
         }
     }
     
+    public func neighbors() -> [Point2D] {
+        return [
+            moved(.north),
+            moved(.east),
+            moved(.south),
+            moved(.west)
+        ]
+    }
+    
     public static func + (lhs: Point2D, rhs: Point2D) -> Point2D {
         .init(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
     }
@@ -97,6 +107,66 @@ public struct Point2D: Hashable, Equatable, AdditiveArithmetic {
     public static func -= (lhs: inout Point2D, rhs: Point2D) {
         lhs.x -= rhs.x
         lhs.y -= rhs.y
+    }
+}
+
+// MARK: Shortest path in grid from A to B
+
+public protocol BFSGrid {
+    func getReachableNeighborsAt(position: Point2D) -> [Point2D]
+}
+
+// Breadth-first search
+public enum BFS {
+    struct ShortestPathInGridResult {
+        /// The full path from point A to point B.
+        public let path: [Point2D]
+        
+        /// The total number of steps required to get from point A to point B in the grid.
+        public let steps: Int
+    }
+    
+    private struct ShortestPathInGrid {
+        let position: Point2D
+        let visitedPoints: [Point2D]
+        let steps: Int
+    }
+    
+    /// Tries to find the shortest path in a grid from point A to B.
+    /// - Parameters:
+    ///   - grid: The grid to find the path in.
+    ///   - pointA: Starting point in the grid. Should be an accessible grid point.
+    ///   - pointB: End point in the grid. Should be an accessible grid point.
+    /// - Returns: The solution when available.
+    static func getShortestPathInGrid(_ grid: BFSGrid, from pointA: Point2D, to pointB: Point2D) -> ShortestPathInGridResult? {
+        var solutionQueue: Deque<ShortestPathInGrid> = [ShortestPathInGrid(position: pointA, visitedPoints: [pointA], steps: 0)]
+        var bestSolution: ShortestPathInGrid?
+        var visitedPoints: Set<Point2D> = [pointA]
+        
+        while let solution = solutionQueue.popFirst()  {
+            if solution.position == pointB {
+                bestSolution = solution
+                break
+            }
+            
+            let possiblePoints = grid.getReachableNeighborsAt(position: solution.position)
+            for nextPoint in possiblePoints where visitedPoints.contains(nextPoint) == false {
+                visitedPoints.insert(nextPoint)
+                solutionQueue.append(
+                    ShortestPathInGrid(
+                        position: nextPoint,
+                        visitedPoints: solution.visitedPoints + [nextPoint],
+                        steps: solution.steps + 1
+                    )
+                )
+            }
+        }
+        
+        guard let bestSolution else {
+            return nil
+        }
+        
+        return ShortestPathInGridResult(path: bestSolution.visitedPoints, steps: bestSolution.steps)
     }
 }
 
