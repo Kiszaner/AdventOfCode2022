@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		401F1494294B1C2500FF3523 /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401F1493294B1C2500FF3523 /* Day13.swift */; };
+		406D10D2295442E100B020A0 /* Day18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406D10D1295442E100B020A0 /* Day18.swift */; };
 		40BAD853294076FD00264391 /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BAD852294076FD00264391 /* Day7.swift */; };
 		40CC5D122939E92600A1EEE4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC5D112939E92600A1EEE4 /* main.swift */; };
 		40CC5FDC2939EA6B00A1EEE4 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CC5FD82939EA6B00A1EEE4 /* Day1.swift */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		401F1492294B1C1900FF3523 /* Day13 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day13; sourceTree = "<group>"; };
 		401F1493294B1C2500FF3523 /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
+		406D10D0295442D800B020A0 /* Day18 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day18; sourceTree = "<group>"; };
+		406D10D1295442E100B020A0 /* Day18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day18.swift; sourceTree = "<group>"; };
 		40BAD851294076ED00264391 /* Day7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day7; sourceTree = "<group>"; };
 		40BAD852294076FD00264391 /* Day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
 		40CC5D0E2939E92600A1EEE4 /* AdventOfCode2022 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode2022; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +126,7 @@
 				A57E6B40294BD23500AD89AA /* Day14.swift */,
 				A57E6B43294BDBB000AD89AA /* Day15.swift */,
 				40D05AEA29504D8300547C8B /* Day17.swift */,
+				406D10D1295442E100B020A0 /* Day18.swift */,
 				40CC5FD92939EA6B00A1EEE4 /* Helpers.swift */,
 				40CC5D112939E92600A1EEE4 /* main.swift */,
 				40CC5FDA2939EA6B00A1EEE4 /* Support Files */,
@@ -148,6 +152,7 @@
 				A57E6B42294BD24100AD89AA /* Day14 */,
 				A57E6B45294BDBBD00AD89AA /* Day15 */,
 				40D05AEC29504D8E00547C8B /* Day17 */,
+				406D10D0295442D800B020A0 /* Day18 */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				40BAD853294076FD00264391 /* Day7.swift in Sources */,
 				A5D0D019293B6DF100C8B392 /* Day3.swift in Sources */,
 				A57E6B44294BDBB000AD89AA /* Day15.swift in Sources */,
+				406D10D2295442E100B020A0 /* Day18.swift in Sources */,
 				A5D0D016293B54B500C8B392 /* Day2.swift in Sources */,
 				40CC5FDD2939EA6B00A1EEE4 /* Helpers.swift in Sources */,
 				A57E6B41294BD23500AD89AA /* Day14.swift in Sources */,

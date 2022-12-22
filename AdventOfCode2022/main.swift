@@ -97,3 +97,9 @@ print("Day 15: \(result15)")
 let day17 = Day17(fileUrl: getInputsFileUrl(name: "Day17"))
 let result17: (Int, Int) = day17.resolve(input: getStringsFrom(day17.fileUrl))
 print("Day 17: \(result17)")
+
+// MARK: - Day 18
+
+let day18 = Day18(fileUrl: getInputsFileUrl(name: "Day18"))
+let result18: (Int, Int) = day18.resolve(input: getStringsFrom(day18.fileUrl))
+print("Day 18: \(result18)")
