@@ -73,7 +73,7 @@ class Day19: Day {
                 let minutesForClay = max(0, blueprint.robotCosts[.obsidian]!.clay - clay) /+ clayRobots
                 let minutesForOre = max(0, blueprint.robotCosts[.obsidian]!.ore - ore) /+ oreRobots
                 let minutes = max(minutesForClay, minutesForOre)
-                if minutes == 0 { // This isn't quite right, since it results in the wrong number for blueprint 1 in the example...
+                if minutes == 0 {
                     return [createRobot(producing: .obsidian)]
                 }
                 if time + minutes < maxTime {
@@ -136,7 +136,6 @@ class Day19: Day {
             let start = State(maxTime: 24, blueprint: blueprint)
             let solutions = findAllPaths(from: start) { $0.nextStates() }
             let best = solutions.max(by: { $0.last!.geodes < $1.last!.geodes })!
-            print("Blueprint \(blueprint.id): \(best.last!.geodes)")
             return best.last!.geodes * blueprint.id
         }
         let result = qualityLevels.reduce(0, +)
@@ -150,7 +149,6 @@ class Day19: Day {
             let start = State(maxTime: 32, blueprint: blueprint)
             let solutions = findAllPaths(from: start) { $0.nextStates() }
             let best = solutions.max(by: { $0.last!.geodes < $1.last!.geodes })!
-            print("Blueprint \(blueprint.id): \(best.last!.geodes)")
             return best.last!.geodes
         }
         let result = maxGeodes.reduce(1, *)
